@@ -5,9 +5,9 @@ local Teams = cloneref(game:GetService('Teams'));
 local Players = cloneref(game:GetService('Players'));
 local RunService = cloneref(game:GetService('RunService'))
 local TweenService = cloneref(game:GetService('TweenService'));
-local RenderStepped = cloneref(RunService.RenderStepped);
-local LocalPlayer = cloneref(Players.LocalPlayer); 
-local Mouse = cloneref(LocalPlayer:GetMouse());
+local RenderStepped = RunService.RenderStepped;
+local LocalPlayer = Players.LocalPlayer; 
+local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = gethui() or protectgui or (syn and syn.protect_gui) or (function() end);
 
